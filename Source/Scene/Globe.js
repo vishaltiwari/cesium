@@ -460,7 +460,7 @@ define([
         }
 
         return intersection;
-    }
+    };
 
     /**
      * Asynchronously determines the imagery layer features that are intersected by a pick ray.  The intersected imagery
