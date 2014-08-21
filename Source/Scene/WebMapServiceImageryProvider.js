@@ -530,8 +530,6 @@ define([
         }
 
         var rectangle = this._tilingScheme.tileXYToRectangle(x, y, level);
-=======
->>>>>>> origin/wmsImprovements
 
         var i = (this._tileWidth * (longitude - rectangle.west) / (rectangle.east - rectangle.west)) | 0;
         var j = (this._tileHeight * (rectangle.north - latitude) / (rectangle.north - rectangle.south)) | 0;
