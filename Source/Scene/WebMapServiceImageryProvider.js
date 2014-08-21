@@ -117,7 +117,6 @@ define([
         this._enablePickFeatures = defaultValue(options.enablePickFeatures, true);
         this._getFeatureInfoAsGeoJson = defaultValue(options.getFeatureInfoAsGeoJson, true);
         this._getFeatureInfoAsXml = defaultValue(options.getFeatureInfoAsXml, true);
-        this._useWebMercator = defaultValue(options.useWebMercator, false);
 
         // Merge the parameters with the defaults, and make all parameter names lowercase
         var parameter;
@@ -451,6 +450,10 @@ define([
         }
         //>>includeEnd('debug');
 
+        if (!this._enablePickFeatures) {
+            return undefined;
+        }
+
         var rectangle = this._tilingScheme.tileXYToNativeRectangle(x, y, level);
 
         var projected;
@@ -527,6 +530,8 @@ define([
         }
 
         var rectangle = this._tilingScheme.tileXYToRectangle(x, y, level);
+=======
+>>>>>>> origin/wmsImprovements
 
         var i = (this._tileWidth * (longitude - rectangle.west) / (rectangle.east - rectangle.west)) | 0;
         var j = (this._tileHeight * (rectangle.north - latitude) / (rectangle.north - rectangle.south)) | 0;
