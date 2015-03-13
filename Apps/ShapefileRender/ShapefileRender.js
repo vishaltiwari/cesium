@@ -14,6 +14,7 @@ define([
         'Cesium/Scene/ArcGisMapServerImageryProvider',
         'Cesium/Core/Color',
         'Cesium/Core/JulianDate',
+        'Cesium/Core/CesiumTerrainProvider',
         'js/shp',
         'js/proj4',
         'domReady!'
@@ -32,6 +33,7 @@ define([
         ArcGisMapServerImageryProvider,
         Color,
         JulianDate,
+        CesiumTerrainProvider,
         shp,
         proj4
         ) {
@@ -45,16 +47,30 @@ define([
             baseLayerPicker : false
         });
 
+        var terrainProvider = new CesiumTerrainProvider({
+            url : '//assets.agi.com/stk-terrain/world',
+            requestWaterMask: true
+        });
+
+        viewer.terrainProvider = terrainProvider;
+
         var dataSource = new GeoJsonDataSource();
         viewer.dataSources.add(dataSource);
 
         GeoJsonDataSource.crsNames['EPSG:32245'] = function(coordinates){
             //Define the projections system:
 
-            var firstProjection = 'GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]]';
-            var secondProjection = 'PROJCS["WGS_72_UTM_zone_45N",GEOGCS["GCS_WGS 72",DATUM["D_WGS_1972",SPHEROID["WGS_1972",6378135,298.26]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",87],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["Meter",1]]';
+            //var firstProjection = 'GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]]';
+            //var secondProjection = 'PROJCS["WGS_72_UTM_zone_45N",GEOGCS["GCS_WGS 72",DATUM["D_WGS_1972",SPHEROID["WGS_1972",6378135,298.26]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",87],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["Meter",1]]';
+
+
             //var secondProjection = 'PROJCS["NAD83 / Massachusetts Mainland",GEOGCS["NAD83",DATUM["North_American_Datum_1983",SPHEROID["GRS 1980",6378137,298.257222101,AUTHORITY["EPSG","7019"]],AUTHORITY["EPSG","6269"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.01745329251994328,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4269"]],UNIT["metre",1,AUTHORITY["EPSG","9001"]],PROJECTION["Lambert_Conformal_Conic_2SP"],PARAMETER["standard_parallel_1",42.68333333333333],PARAMETER["standard_parallel_2",41.71666666666667],PARAMETER["latitude_of_origin",41],PARAMETER["central_meridian",-71.5],PARAMETER["false_easting",200000],PARAMETER["false_northing",750000],AUTHORITY["EPSG","26986"],AXIS["X",EAST],AXIS["Y",NORTH]]';
             //var secondProjection = "+proj=gnom +lat_0=90 +lon_0=0 +x_0=6300000 +y_0=6300000 +ellps=WGS84 +datum=WGS84 +units=m +no_defs";
+
+            var firstProjection = 'PROJCS["WGS_72_UTM_zone_45N",GEOGCS["GCS_WGS 72",DATUM["D_WGS_1972",SPHEROID["WGS_1972",6378135,298.26]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",87],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",500000],PARAMETER["false_northing",0],UNIT["Meter",1]]';
+
+   //         var firstProjection = '+proj=utm +zone=45 +ellps=WGS72 +towgs84=0,0,4.5,0,0,0.554,0.2263 +units=m +no_defs';
+            var secondProjection = proj4('EPSG:4326');
 
             var xa = coordinates[0];
             var ya = coordinates[1];
@@ -62,6 +78,8 @@ define([
 
             var newCoordinates = proj4(firstProjection,secondProjection,[xa,ya]);
             console.log('New Coordinates' , newCoordinates);
+
+            return newCoordinates;
 
         };
 
@@ -93,7 +111,8 @@ define([
                 var geom = geojsonObj[k].geometry.coordinates;
                 for(var q=0 ; q<geom.length ; q++){
                     for(var p=0 ; p<geom[q].length ; p++){
-                        convert(geom[q][p]);
+                        var newCoords = convert(geom[q][p]);
+                        geojsonObj[k].geometry.coordinates[q][p] = newCoords;
                     }
                 }
                 console.log(geom);
