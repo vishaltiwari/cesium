@@ -1,15 +1,9 @@
 /*global define*/
 define([
-        'Cesium/Core/defined',
-        'Cesium/Core/formatError',
-        'Cesium/Core/getFilenameFromUri',
-        'Cesium/Core/queryToObject',
-        'Cesium/DataSources/CzmlDataSource',
         'Cesium/DataSources/GeoJsonDataSource',
         'Cesium/Scene/TileMapServiceImageryProvider',
         'Cesium/Widgets/Viewer/Viewer',
         'Cesium/Widgets/Viewer/viewerCesiumInspectorMixin',
-        'Cesium/Widgets/Viewer/viewerDragDropMixin',
         'Cesium/Scene/OpenStreetMapImageryProvider',
         'Cesium/Scene/ArcGisMapServerImageryProvider',
         'Cesium/Core/Color',
@@ -19,16 +13,10 @@ define([
         'js/proj4',
         'domReady!'
     ], function(
-        defined,
-        formatError,
-        getFilenameFromUri,
-        queryToObject,
-        CzmlDataSource,
         GeoJsonDataSource,
         TileMapServiceImageryProvider,
         Viewer,
         viewerCesiumInspectorMixin,
-        viewerDragDropMixin,
         OpenStreetMapImageryProvider,
         ArcGisMapServerImageryProvider,
         Color,
@@ -47,12 +35,12 @@ define([
             baseLayerPicker : false
         });
 
-        var terrainProvider = new CesiumTerrainProvider({
+/*        var terrainProvider = new CesiumTerrainProvider({
             url : '//assets.agi.com/stk-terrain/world',
             requestWaterMask: true
         });
 
-        viewer.terrainProvider = terrainProvider;
+        viewer.terrainProvider = terrainProvider;*/
 
         var dataSource = new GeoJsonDataSource();
         viewer.dataSources.add(dataSource);
