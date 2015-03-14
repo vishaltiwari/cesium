@@ -2,12 +2,12 @@
 require({
     baseUrl : '.',
     paths : {
-        domReady : '../../ThirdParty/requirejs-2.1.9/domReady',
-        Cesium : '../../Source',
-        js: './js'
+        domReady : '../../../ThirdParty/requirejs-2.1.9/domReady',
+        Cesium : '../../../Source',
+        js: '../js'
         //shp : '../js/shp.min.js'
     }
-}, ['renderFileData'], function() {
+}, ['LoadFileFormat'], function() {
 
     console.log('renderFileData is loaded or has shown error\n');
     //load the scripts(they will be functions) like this:
