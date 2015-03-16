@@ -1,18 +1,27 @@
-define(['Cesium/DataSources/GeoJsonDataSource'],function(GeoJsonDataSource){
+define(['Cesium/DataSources/GeoJsonDataSource',
+        'Cesium/Core/Color'
+        ],
+        function(GeoJsonDataSource,
+                Color){
     "use strict";
-    return function(viewer,data){
-        var dataSource = new GeoJsonDataSource();
+     function renderGeoJson(viewer,data){
         if(data.type === 'geojson'){
-            dataSource.load(data.path).then(function(){
+          //var dataSource = new GeoJsonDataSource();
+            console.log('trying to load:'+data.path);
+            var promise = GeoJsonDataSource.load(data.path);
+            //viewer.dataSources.add(dataSource);
+            //viewer.zoomTo(dataSource);
+            promise.then(function(dataSource){
+                console.log('geojson file read');
                 var entities = dataSource.entities.values;
 
                 for (var i = 0; i < entities.length; i++) {
                     var entity = entities[i];
 
-                    var hierarchyProperty = entity.polygon.hierarchy;
-                    var time=JulianDate.now();
-                    var hierarchy=hierarchyProperty.getValue(time);
-                    var positions = hierarchy.positions;
+                    //var hierarchyProperty = entity.polygon.hierarchy;
+                    //var time=JulianDate.now();
+                    //var hierarchy=hierarchyProperty.getValue(time);
+                    //var positions = hierarchy.positions;
                     var color = Color.White;
 
                     entity.polygon.material = color;
@@ -23,8 +32,13 @@ define(['Cesium/DataSources/GeoJsonDataSource'],function(GeoJsonDataSource){
                     entity.polygon.extrudedHeight = 3.5*entity.properties.Stories;
                     //entity.polygon.extrudedHeight = 3.5*entity.properties.HT_RANDOM;
                 }
+                viewer.dataSources.add(dataSource);
+                viewer.zoomTo(dataSource);
             });
         }
-
-    };
+        else{
+            console.log('Not a geojson file');
+        }
+    }
+     return renderGeoJson;
 });
