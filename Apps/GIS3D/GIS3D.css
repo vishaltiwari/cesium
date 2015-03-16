@@ -39,3 +39,9 @@ body {
     background-repeat: no-repeat;
     background-image: url(Images/ajax-loader.gif);
 }
+#upload-button{
+    position: relative;
+}
+#upload-file{
+    position: relative;
+}

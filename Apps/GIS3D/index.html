@@ -7,12 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-    <title>ShapeFile Render</title>
+    <title>GIS3D</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="GIS3D.css" media="screen">
     <script data-main="main" src="../../ThirdParty/requirejs-2.1.9/require.js"></script>
 </head>
 <body style="background: #000;">
     <div id="cesiumContainer" class="fullWindow"></div>
+    <input type="file" id="upload-file" class="cesium-button">
+    <input type="button" id="upload-button" class="cesium-button" value="Upload">
 </body>
 </html>
