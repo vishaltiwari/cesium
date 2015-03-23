@@ -4,7 +4,9 @@ require({
     paths : {
         domReady : '../../ThirdParty/requirejs-2.1.9/domReady',
         Cesium : '../../Source',
-        js: './js'
+        js: './js',
+        jquery: ['http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min',
+                 './js/jquery.min']
         //shp : '../js/shp.min.js'
     }
 }, ['renderFileData'], function() {
