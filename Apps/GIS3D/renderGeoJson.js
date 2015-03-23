@@ -1,3 +1,4 @@
+/*global define*/
 define(['Cesium/DataSources/GeoJsonDataSource',
         'Cesium/Core/Color'
         ],
