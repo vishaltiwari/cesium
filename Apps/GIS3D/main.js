@@ -6,12 +6,13 @@ require({
         Cesium : '../../Source',
         js: './js',
         jquery: ['http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min',
-                 './js/jquery.min']
+                 './js/jquery.min'],
+        lie : './js/lie.min'
         //shp : '../js/shp.min.js'
     }
-}, ['renderFileData'], function() {
+}, ['mainRender'], function() {
 
-    console.log('renderFileData is loaded or has shown error\n');
+    //console.log('renderFileData is loaded or has shown error\n');
     //load the scripts(they will be functions) like this:
     // myfunction.js : define(['Cesium/core/define','shp'],function(define,shp)
     //   { Do something here, or return something to this});
