@@ -1,0 +1,4 @@
+- mainRender.js : creates the walls of the buildings
+- Use the php script in image/data convertToJson.php to get a json file containing filename of the texture, position : [lat,long] and the direction in which the camera was facing.
+- Things to note when using the .php script, It leaves an extra "," at the end of the json file, so remove it before using the generated json file.
+-- Run the script inside the folder conatining the geo-tagged texture. as $php convertToJson.php
