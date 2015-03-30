@@ -24,7 +24,16 @@ define(['require',
             console.log('creating walls now');
             require(['createWallID'],function(promise){
                 promise.then(function(walls){
+                    //call the textureTagging function.
+                    require(['textureTagging'],function(createTextureWallMap){
+                        /*promise.then(function(createTextureWallMap){
+                            console.log('Inside the returned promise');
+                            createTextureWallMap(walls.arr);
+                        });*/
+                        createTextureWallMap(walls.arr);
+                    });
                     console.log(walls.arr);
+                    /*
                     console.log('Rendering buildings now!!!');
                     for(var i=0 ; i<walls.arr.length ; i++){
                         //console.log(walls.arr[i]);
@@ -47,28 +56,20 @@ define(['require',
                                 })
                             }),
                             appearance : new MaterialAppearance({
-                                material : Material.fromType('Checkerboard'),
+                                material : new Material({
+                                    fabric : {
+                                        type : 'Image',
+                                        uniforms : {
+                                            //need to change the url for the coresponding wall ID
+                                            image : 'images/Cesium_Logo_Color.jpg'
+                                        }
+                                    }
+                                 }),
                                 materialSupport : MaterialAppearance.MaterialSupport.TEXTURED
                             })
                         }));
 
-                        /*var instance = new geometryInstance({
-                              geometry : new WallGeometry({
-                                  positions : Cartesian3.fromDegreesArrayHeights([
-                                         x1,y1,h,
-                                         x2,y2,h
-                                  ]),
-                                  vertexFormat : MaterialAppearance.MaterialSupport.TEXTURED.vertexFormat
-                              })
-                        });
-                        scene.primitives.add(new Primitive({
-                            geometryInstances : instance,
-                            appearance : new MaterialAppearance({
-                                material : Material.fromType('Checkerboard'),
-                                materialSupport : MaterialAppearance.MaterialSupport.TEXTURED
-                            })
-                        }));*/
-                    }
+                    }*/
                 });
             });
         }
