@@ -1,0 +1,424 @@
+{
+ "type" : "geoTagged Textures",
+"features":[
+		{
+		   "filename" : "IMG_20141012_133944.jpg",
+		   "position" : [17.445547083333,78.349075305556 ],
+		   "direction" : 251
+		},
+
+		{
+		   "filename" : "IMG_20141012_132927.jpg",
+		   "position" : [17.4461975,78.349380472222 ],
+		   "direction" : 76
+		},
+
+		{
+		   "filename" : "IMG_20150107_164255.jpg",
+		   "position" : [17.446955555556,78.346888888889 ],
+		   "direction" : 122
+		},
+
+		{
+		   "filename" : "IMG_20141012_132539.jpg",
+		   "position" : [17.446281416667,78.35004425 ],
+		   "direction" : 198
+		},
+
+		{
+		   "filename" : "IMG_20141012_132422.jpg",
+		   "position" : [17.446002944444,78.350379916667 ],
+		   "direction" : 96
+		},
+
+		{
+		   "filename" : "IMG_20141012_133450.jpg",
+		   "position" : [17.444561,78.349937416667 ],
+		   "direction" : 269
+		},
+
+		{
+		   "filename" : "IMG_20141012_131701.jpg",
+		   "position" : [17.445814111111,78.349060055556 ],
+		   "direction" : 0
+		},
+
+		{
+		   "filename" : "IMG_20141012_131645.jpg",
+		   "position" : [17.445869444444,78.349098194444 ],
+		   "direction" : 325
+		},
+
+		{
+		   "filename" : "IMG_20141012_132914.jpg",
+		   "position" : [17.4461975,78.349380472222 ],
+		   "direction" : 324
+		},
+
+		{
+		   "filename" : "IMG_20141012_131725.jpg",
+		   "position" : [17.445816027778,78.349143972222 ],
+		   "direction" : 0
+		},
+
+		{
+		   "filename" : "IMG_20141012_131743.jpg",
+		   "position" : [17.445520388889,78.3491745 ],
+		   "direction" : 344
+		},
+
+		{
+		   "filename" : "IMG_20141012_134007.jpg",
+		   "position" : [17.445388777778,78.348999 ],
+		   "direction" : 322
+		},
+
+		{
+		   "filename" : "IMG_20150107_164240.jpg",
+		   "position" : [17.446803333333,78.346894444444 ],
+		   "direction" : 307
+		},
+
+		{
+		   "filename" : "IMG_20141012_133016.jpg",
+		   "position" : [17.446172694444,78.349281305556 ],
+		   "direction" : 8
+		},
+
+		{
+		   "filename" : "IMG_20141012_133143.jpg",
+		   "position" : [17.445882777778,78.349258416667 ],
+		   "direction" : 130
+		},
+
+		{
+		   "filename" : "IMG_20150107_164754.jpg",
+		   "position" : [17.447076666667,78.348587222222 ],
+		   "direction" : 225
+		},
+
+		{
+		   "filename" : "IMG_20141012_132146.jpg",
+		   "position" : [17.44512175,78.350509638889 ],
+		   "direction" : 247
+		},
+
+		{
+		   "filename" : "IMG_20141012_132645.jpg",
+		   "position" : [17.446420666667,78.349822972222 ],
+		   "direction" : 150
+		},
+
+		{
+		   "filename" : "IMG_20141012_133255.jpg",
+		   "position" : [17.44535825,78.3498535 ],
+		   "direction" : 103
+		},
+
+		{
+		   "filename" : "IMG_20141012_131929.jpg",
+		   "position" : [17.445049277778,78.349754333333 ],
+		   "direction" : 350
+		},
+
+		{
+		   "filename" : "IMG_20141012_131832.jpg",
+		   "position" : [17.445524194444,78.349449138889 ],
+		   "direction" : 319
+		},
+
+		{
+		   "filename" : "IMG_20141012_132102.jpg",
+		   "position" : [17.445140833333,78.35051725 ],
+		   "direction" : 189
+		},
+
+		{
+		   "filename" : "IMG_20141012_133510.jpg",
+		   "position" : [17.444589611111,78.349891638889 ],
+		   "direction" : 283
+		},
+
+		{
+		   "filename" : "IMG_20150107_164423.jpg",
+		   "position" : [17.446843888889,78.347008055556 ],
+		   "direction" : 215
+		},
+
+		{
+		   "filename" : "IMG_20141012_134018.jpg",
+		   "position" : [17.445388777778,78.348999 ],
+		   "direction" : 274
+		},
+
+		{
+		   "filename" : "IMG_20141012_132313.jpg",
+		   "position" : [17.445652,78.350906361111 ],
+		   "direction" : 171
+		},
+
+		{
+		   "filename" : "IMG_20141012_131854.jpg",
+		   "position" : [17.445371611111,78.34963225 ],
+		   "direction" : 353
+		},
+
+		{
+		   "filename" : "IMG_20150107_164059.jpg",
+		   "position" : [17.446578333333,78.347218888889 ],
+		   "direction" : 284
+		},
+
+		{
+		   "filename" : "IMG_20141012_132933.jpg",
+		   "position" : [17.446172694444,78.349327083333 ],
+		   "direction" : 109
+		},
+
+		{
+		   "filename" : "IMG_20141012_132919.jpg",
+		   "position" : [17.4461975,78.349380472222 ],
+		   "direction" : 30
+		},
+
+		{
+		   "filename" : "IMG_20141012_133133.jpg",
+		   "position" : [17.445882777778,78.349258416667 ],
+		   "direction" : 121
+		},
+
+		{
+		   "filename" : "IMG_20141012_134000.jpg",
+		   "position" : [17.445547083333,78.349075305556 ],
+		   "direction" : 3
+		},
+
+		{
+		   "filename" : "IMG_20141012_131823.jpg",
+		   "position" : [17.445524194444,78.349449138889 ],
+		   "direction" : 351
+		},
+
+		{
+		   "filename" : "IMG_20141012_132623.jpg",
+		   "position" : [17.446464527778,78.350120527778 ],
+		   "direction" : 177
+		},
+
+		{
+		   "filename" : "IMG_20150107_164950.jpg",
+		   "position" : [17.445978055556,78.34865 ],
+		   "direction" : 97
+		},
+
+		{
+		   "filename" : "IMG_20150107_164408.jpg",
+		   "position" : [17.446841388889,78.3469875 ],
+		   "direction" : 272
+		},
+
+		{
+		   "filename" : "IMG_20141012_133524.jpg",
+		   "position" : [17.444622027778,78.349777222222 ],
+		   "direction" : 215
+		},
+
+		{
+		   "filename" : "IMG_20141012_133949.jpg",
+		   "position" : [17.445547083333,78.349075305556 ],
+		   "direction" : 7
+		},
+
+		{
+		   "filename" : "IMG_20141012_133921.jpg",
+		   "position" : [17.445352527778,78.348800638889 ],
+		   "direction" : 341
+		},
+
+		{
+		   "filename" : "IMG_20141012_133341.jpg",
+		   "position" : [17.444892861111,78.350036611111 ],
+		   "direction" : 163
+		},
+
+		{
+		   "filename" : "IMG_20141012_132523.jpg",
+		   "position" : [17.44605825,78.350120527778 ],
+		   "direction" : 207
+		},
+
+		{
+		   "filename" : "IMG_20141012_133125.jpg",
+		   "position" : [17.446054444444,78.349235527778 ],
+		   "direction" : 136
+		},
+
+		{
+		   "filename" : "IMG_20141012_131655.jpg",
+		   "position" : [17.445869444444,78.349098194444 ],
+		   "direction" : 323
+		},
+
+		{
+		   "filename" : "IMG_20141012_132930.jpg",
+		   "position" : [17.446172694444,78.349327083333 ],
+		   "direction" : 109
+		},
+
+		{
+		   "filename" : "IMG_20141012_132917.jpg",
+		   "position" : [17.4461975,78.349380472222 ],
+		   "direction" : 350
+		},
+
+		{
+		   "filename" : "IMG_20141012_131714.jpg",
+		   "position" : [17.445814111111,78.349060055556 ],
+		   "direction" : 348
+		},
+
+		{
+		   "filename" : "IMG_20141012_133008.jpg",
+		   "position" : [17.446172694444,78.349281305556 ],
+		   "direction" : 49
+		},
+
+		{
+		   "filename" : "IMG_20141012_133320.jpg",
+		   "position" : [17.445068333333,78.350028972222 ],
+		   "direction" : 134
+		},
+
+		{
+		   "filename" : "IMG_20141012_133938.jpg",
+		   "position" : [17.445352527778,78.348800638889 ],
+		   "direction" : 236
+		},
+
+		{
+		   "filename" : "IMG_20141012_132521.jpg",
+		   "position" : [17.44605825,78.350120527778 ],
+		   "direction" : 182
+		},
+
+		{
+		   "filename" : "IMG_20141012_133448.jpg",
+		   "position" : [17.444561,78.349937416667 ],
+		   "direction" : 255
+		},
+
+		{
+		   "filename" : "IMG_20141012_133355.jpg",
+		   "position" : [17.444820388889,78.350173944444 ],
+		   "direction" : 184
+		},
+
+		{
+		   "filename" : "IMG_20141012_132452.jpg",
+		   "position" : [17.446052527778,78.350303638889 ],
+		   "direction" : 158
+		},
+
+		{
+		   "filename" : "IMG_20150107_164635.jpg",
+		   "position" : [17.447183611111,78.348520833333 ],
+		   "direction" : 136
+		},
+
+		{
+		   "filename" : "IMG_20141012_132923.jpg",
+		   "position" : [17.4461975,78.349380472222 ],
+		   "direction" : 43
+		},
+
+		{
+		   "filename" : "IMG_20141012_134012.jpg",
+		   "position" : [17.445388777778,78.348999 ],
+		   "direction" : 276
+		},
+
+		{
+		   "filename" : "IMG_20141012_133306.jpg",
+		   "position" : [17.44535825,78.3498535 ],
+		   "direction" : 123
+		},
+
+		{
+		   "filename" : "IMG_20141012_132610.jpg",
+		   "position" : [17.446464527778,78.350120527778 ],
+		   "direction" : 155
+		},
+
+		{
+		   "filename" : "IMG_20141012_131756.jpg",
+		   "position" : [17.445465083333,78.349411 ],
+		   "direction" : 2
+		},
+
+		{
+		   "filename" : "IMG_20141012_132118.jpg",
+		   "position" : [17.445140833333,78.35051725 ],
+		   "direction" : 257
+		},
+
+		{
+		   "filename" : "IMG_20141012_133113.jpg",
+		   "position" : [17.446172694444,78.349281305556 ],
+		   "direction" : 154
+		},
+
+		{
+		   "filename" : "IMG_20141012_132825.jpg",
+		   "position" : [17.446556083333,78.349227888889 ],
+		   "direction" : 22
+		},
+
+		{
+		   "filename" : "IMG_20150107_164646.jpg",
+		   "position" : [17.447188611111,78.348516111111 ],
+		   "direction" : 327
+		},
+
+		{
+		   "filename" : "IMG_20141012_132449.jpg",
+		   "position" : [17.445871333333,78.350410444444 ],
+		   "direction" : 114
+		},
+
+		{
+		   "filename" : "IMG_20141012_132235.jpg",
+		   "position" : [17.445245722222,78.35092925 ],
+		   "direction" : 204
+		},
+
+		{
+		   "filename" : "IMG_20141012_132417.jpg",
+		   "position" : [17.446002944444,78.350379916667 ],
+		   "direction" : 117
+		},
+
+		{
+		   "filename" : "IMG_20141012_132057.jpg",
+		   "position" : [17.445140833333,78.35051725 ],
+		   "direction" : 226
+		},
+
+		{
+		   "filename" : "IMG_20141012_133416.jpg",
+		   "position" : [17.444774611111,78.350189194444 ],
+		   "direction" : 207
+		},
+
+		{
+		   "filename" : "IMG_20150107_164453.jpg",
+		   "position" : [17.446978055556,78.347289722222 ],
+		   "direction" : 133
+		},
+
+		{
+		   "filename" : "IMG_20141012_131911.jpg",
+		   "position" : [17.445390694444,78.3496475 ],
+		   "direction" : 3
+		}
+	]
+}

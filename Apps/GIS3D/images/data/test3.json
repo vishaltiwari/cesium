@@ -1,0 +1,19 @@
+{
+    "maxUsers":100,
+    "maxTextLength":2000,
+    "maxFileSize":2000,
+    "services":
+    [
+        {
+            "serviceName":"Яндекc",
+            "className":"YandexConnector.class",
+            "isEnabled":true
+        },
+
+        {
+            "serviceName":"Google",
+            "className":"GoogleConnector.class",
+            "isEnabled":false
+        }
+    ]
+}

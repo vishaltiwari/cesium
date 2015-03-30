@@ -1,0 +1,11 @@
+{
+    "type":"geoTagged_Textures",
+    "features":
+    [
+        {
+            "filename":"IMG_20141012_133944.jpg",
+	    "position":[71.234234 , 68.234234],
+            "direction" : 251
+        }
+    ]
+}
